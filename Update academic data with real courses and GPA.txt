@@ -1,0 +1,66 @@
+# === Personal Information ===
+full_name = "Matthew Solomon"
+student_email = "msolomon3@aggies.ncat.edu"
+hometown = "Wake Forest, NC"
+graduation_semester = "Spring 2029"
+major = "Computer Science"
+
+# === Academic Data ===
+current_courses = ["African American History", "COMP 163", "MATH 131", "SPEECH 250"]
+completed_courses = ["Biology", "Chemistry", "Calculus", "Spanish II", "World History"]
+credit_hours = [3, 3, 3, 3]
+gpa_history = [3.8, 3.7, 3.9]
+
+course_credits = {
+    "African American History": 3,
+    "COMP 163": 3,
+    "MATH 131": 3,
+    "SPEECH 250": 3
+}
+
+course_professors = {
+    "African American History": "Dr. Johnson",
+    "COMP 163": "Prof. Rhodes",
+    "MATH 131": "Dr. Lee",
+    "SPEECH 250": "Dr. Williams"
+}
+
+course_rooms = {
+    "African American History": "Crosby 210",
+    "COMP 163": "M-Eric 300",
+    "MATH 131": "Marteena 201",
+    "SPEECH 250": "Crosby 121"
+}
+
+# === Contact Information ===
+emergency_contact = ("Parent", "Test Parent", "000-000-0000")
+home_address = ("123 Test Lane", "Test City", "00000")
+instagram_info = ("Instagram", "@test", 0)
+twitter_info = ("Twitter", "@test", 0)
+birthday = ("Birthday", 1, 1, 2000)
+
+# === Skills & Development ===
+current_skills = {"Skill1", "Skill2"}
+skills_to_learn = {"Skill3", "Skill4"}
+career_interests = {"Interest1", "Interest2"}
+hobbies = {"Hobby1", "Hobby2"}
+entertainment_backlog = {"Show1", "Show2"}
+
+# === Budget & Study Hours ===
+monthly_budget = {"Food": 100, "Entertainment": 50, "Books": 30, "Transportation": 20}
+study_hours_per_subject = {"Subject1": 5, "Subject2": 5}
+contact_directory = {"Parent": "000-000-0000"}
+
+# === Calculations ===
+total_current_credits = sum(credit_hours)
+cumulative_gpa = round(sum(gpa_history) / len(gpa_history), 2)
+total_weekly_study_hours = sum(study_hours_per_subject.values())
+monthly_budget_total = sum(monthly_budget.values())
+daily_food_budget = round(monthly_budget["Food"] / 30, 2)
+annual_budget_projection = monthly_budget_total * 12
+total_social_followers = instagram_info[2] + twitter_info[2]
+current_skills_count = len(current_skills)
+skills_to_learn_count = len(skills_to_learn)
+contact_directory_size = len(contact_directory)
+entertainment_backlog_count = len(entertainment_backlog)
+hobbies_count = len(hobbies)

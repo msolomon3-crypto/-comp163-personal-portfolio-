@@ -1,0 +1,79 @@
+# === Personal Information ===
+full_name = "Matthew Solomon"
+student_email = "msolomon3@aggies.ncat.edu"
+hometown = "Wake Forest, NC"
+graduation_semester = "Spring 2029"
+major = "Computer Science"
+
+# === Academic Data ===
+current_courses = ["African American History", "COMP 163", "MATH 131", "SPEECH 250"]
+completed_courses = ["Biology", "Chemistry", "Calculus", "Spanish II", "World History"]
+credit_hours = [3, 3, 3, 3]
+gpa_history = [3.8, 3.7, 3.9]
+
+course_credits = {
+    "African American History": 3,
+    "COMP 163": 3,
+    "MATH 131": 3,
+    "SPEECH 250": 3
+}
+
+course_professors = {
+    "African American History": "Dr. Johnson",
+    "COMP 163": "Prof. Rhodes",
+    "MATH 131": "Dr. Lee",
+    "SPEECH 250": "Dr. Williams"
+}
+
+course_rooms = {
+    "African American History": "Crosby 210",
+    "COMP 163": "M-Eric 300",
+    "MATH 131": "Marteena 201",
+    "SPEECH 250": "Crosby 121"
+}
+
+# === Contact Information ===
+emergency_contact = ("Mom", "Hannah Solomon", "919-555-0199")
+home_address = ("123 Maple Lane", "Wake Forest, NC", "27587")
+instagram_info = ("Instagram", "@msolomon", 200)
+twitter_info = ("Twitter", "@msolodev", 95)
+birthday = ("Birthday", 8, 14, 2007)
+
+# === Skills & Development ===
+current_skills = {
+    "Python basics",
+    "CS50x fundamentals",
+    "Client Relations",
+    "Sales Strategy",
+    "Leadership",
+    "Communication"
+}
+
+skills_to_learn = {"Java", "Data Structures", "Git", "Web Design", "Public Speaking"}
+career_interests = {"Software Development", "Cybersecurity", "B2B Marketing"}
+hobbies = {"Basketball", "Watching Anime", "Reading", "Music"}
+entertainment_backlog = {"One Piece", "Naruto", "Jujutsu Kaisen", "Bleach"}
+
+# === Budget & Study Hours ===
+monthly_budget = {"Food": 400, "Entertainment": 150, "Books": 120, "Transportation": 100}
+study_hours_per_subject = {"Programming": 12, "Math": 10, "English": 5, "Other": 4}
+contact_directory = {
+    "Mom": "919-555-0199",
+    "Roommate": "336-555-7821",
+    "Academic Advisor": "336-334-5000"
+}
+
+# === Calculations ===
+total_current_credits = sum(credit_hours)
+cumulative_gpa = round(sum(gpa_history) / len(gpa_history), 2)
+total_weekly_study_hours = sum(study_hours_per_subject.values())
+monthly_budget_total = sum(monthly_budget.values())
+daily_food_budget = round(monthly_budget["Food"] / 30, 2)
+annual_budget_projection = monthly_budget_total * 12
+study_cost_per_hour = round(monthly_budget["Books"] / total_weekly_study_hours, 2)
+total_social_followers = instagram_info[2] + twitter_info[2]
+current_skills_count = len(current_skills)
+skills_to_learn_count = len(skills_to_learn)
+contact_directory_size = len(contact_directory)
+entertainment_backlog_count = len(entertainment_backlog)
+hobbies_count = len(hobbies)

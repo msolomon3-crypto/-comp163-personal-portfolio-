@@ -1,0 +1,128 @@
+# === Personal Information ===
+full_name = "Matthew Solomon"
+student_email = "msolomon3@aggies.ncat.edu"
+hometown = "Wake Forest, NC"
+graduation_semester = "Spring 2029"
+major = "Computer Science"
+
+# === Academic Data ===
+current_courses = ["African American History", "COMP 163", "MATH 131", "SPEECH 250"]
+completed_courses = ["Biology", "Chemistry", "Calculus", "Spanish II", "World History"]
+credit_hours = [3, 3, 3, 3]   # adjust if any class has different credits
+gpa_history = [3.8, 3.7, 3.9]  # estimated GPA progression
+
+# === Contact Information ===
+emergency_contact = ("Mom", "Hannah Solomon", "919-555-0199")  # fake phone for privacy
+home_address = ("123 Maple Lane", "Wake Forest, NC", "27587")  # fake but formatted
+instagram_info = ("Instagram", "@msolomon", 200)  # estimate follower count
+twitter_info = ("Twitter", "@msolodev", 95)
+birthday = ("Birthday", 8, 14, 2007)  # optional
+
+# === Skills & Development ===
+current_skills = {
+    "Python basics",
+    "CS50x fundamentals",
+    "Client Relations",
+    "Sales Strategy",
+    "Leadership",
+    "Communication"
+}
+skills_to_learn = {"Java", "Data Structures", "Git", "Web Design", "Public Speaking"}
+career_interests = {"Software Development", "Cybersecurity", "B2B Marketing"}
+hobbies = {"Basketball", "Watching Anime", "Reading", "Music"}
+entertainment_backlog = {"One Piece", "Naruto", "Jujutsu Kaisen", "Bleach"}
+
+# === Courses Details ===
+course_credits = {
+    "African American History": 3,
+    "COMP 163": 3,
+    "MATH 131": 3,
+    "SPEECH 250": 3
+}
+
+course_professors = {
+    "African American History": "Dr. Johnson",
+    "COMP 163": "Prof. Rhodes",
+    "MATH 131": "Dr. Lee",
+    "SPEECH 250": "Dr. Williams"
+}
+
+course_rooms = {
+    "African American History": "Crosby 210",
+    "COMP 163": "M-Eric 300",
+    "MATH 131": "Marteena 201",
+    "SPEECH 250": "Crosby 121"
+}
+
+# === Budget & Study Hours ===
+monthly_budget = {"Food": 400, "Entertainment": 150, "Books": 120, "Transportation": 100}
+study_hours_per_subject = {"Programming": 12, "Math": 10, "English": 5, "Other": 4}
+contact_directory = {
+    "Mom": "919-555-0199",
+    "Roommate": "336-555-7821",
+    "Academic Advisor": "336-334-5000"
+}
+
+# === Calculations ===
+total_current_credits = sum(credit_hours)
+cumulative_gpa = round(sum(gpa_history) / len(gpa_history), 2)
+total_weekly_study_hours = sum(study_hours_per_subject.values())
+academic_load = total_current_credits + total_weekly_study_hours
+monthly_budget_total = sum(monthly_budget.values())
+daily_food_budget = round(monthly_budget["Food"] / 30, 2)
+annual_budget_projection = monthly_budget_total * 12
+study_cost_per_hour = round(monthly_budget["Books"] / total_weekly_study_hours, 2)
+total_social_followers = instagram_info[2] + twitter_info[2]
+current_skills_count = len(current_skills)
+skills_to_learn_count = len(skills_to_learn)
+contact_directory_size = len(contact_directory)
+entertainment_backlog_count = len(entertainment_backlog)
+hobbies_count = len(hobbies)
+
+# === Output ===
+print("="*55)
+print("              PERSONAL ACADEMIC & LIFE PORTFOLIO")
+print("="*55)
+
+print(f"Student: {full_name} | Email: {student_email}")
+print(f"From: {hometown} | Graduating: {graduation_semester}")
+print(f"Major: {major}\n")
+
+print("=== ACADEMIC PROFILE ===")
+print(f"Current Semester: {total_current_credits} credits across {len(current_courses)} courses")
+print(f"Cumulative GPA: {cumulative_gpa}")
+print(f"Weekly Study Time: {total_weekly_study_hours} hours")
+print(f"Academic Investment: ${study_cost_per_hour} per study hour\n")
+
+print("Current Courses:")
+for course in current_courses:
+    print(f"{course} - {course_credits[course]} credits - {course_professors[course]} - {course_rooms[course]}")
+print()
+
+print("=== PERSONAL DEVELOPMENT ===")
+print(f"Current Skills: {current_skills}")
+print(f"Learning Goals: {skills_to_learn}")
+print(f"Career Interests: {career_interests}")
+print(f"Skills Currently Have: {current_skills_count}")
+print(f"Skills Want to Learn: {skills_to_learn_count}\n")
+
+print("=== FINANCIAL OVERVIEW ===")
+print(f"Monthly Budget: ${monthly_budget_total}")
+print(f"Food: ${monthly_budget['Food']} (${daily_food_budget}/day)")
+print(f"Entertainment: ${monthly_budget['Entertainment']}")
+print(f"Books: ${monthly_budget['Books']}")
+print(f"Transportation: ${monthly_budget['Transportation']}")
+print(f"Annual Projection: ${annual_budget_projection}\n")
+
+print("=== CONNECTIONS & CONTACTS ===")
+print(f"Emergency Contact: {emergency_contact[1]} ({emergency_contact[0]}) - {emergency_contact[2]}")
+print(f"Home Address: {home_address[0]}, {home_address[1]} {home_address[2]}")
+print(f"Social Media Presence: {total_social_followers} followers across 2 platforms")
+print(f"Key Contacts: {contact_directory_size} people in directory\n")
+
+print("=== LIFE STATISTICS ===")
+print(f"Total Courses Completed: {len(completed_courses)}")
+print(f"Current Academic Load: {academic_load} weekly commitments")
+print(f"Entertainment Backlog: {entertainment_backlog_count} items")
+print(f"Current Hobbies: {hobbies_count} activities")
+print("="*70)
